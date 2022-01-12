@@ -1,0 +1,24 @@
+<div class="row">
+        <div class="col-sm-6">
+            <form #user = "ngForm" (submit)="loginuser(user.value)">
+            <div class="form-group" id="loginForm" >
+                <h1>Login</h1>
+                <label for="username"><b>username</b></label>
+                <input type="text" class="form-control" placeholder="username" name="username" required ngModel>
+    
+                <label for="psw"><b>Password</b></label>
+                <input type="password" class="form-control" placeholder="password" name="password" required ngModel>
+                <br>
+                <!-- <p>OTP</p>
+                <input type="number" class="form-control" placeholder="" name="otp"> -->
+                <br>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+            </form>
+        </div>
+        <div class="col-sm-5">
+            <img src="https://www.nic.lat/wp-content/uploads/2019/01/password-big.png" width="500px" alt="img">
+        </div>
+    </div>
+
+    

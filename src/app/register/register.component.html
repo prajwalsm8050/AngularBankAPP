@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-6">
+            <form #user="ngForm" (submit)="register(user.value)">
+            <div class="form-group" id="myForm">
+                <h1>Register</h1>
+                <label for="First Name"><b>First Name</b></label>
+                <input type="text" class="form-control" placeholder="First Name" name="fname" required ngModel>
+
+                <label for="Last Name"><b>Last Name</b></label>
+                <input type="text" class="form-control" placeholder="Last Name" name="lname" required ngModel>
+
+                <label for="Email"><b>Email</b></label>
+                <input type="email" class="form-control" placeholder="Email" name="email" required ngModel>
+    
+                <label for="psw"><b>Password</b></label>
+                <input type="password" class="form-control" placeholder="password" name="password" required ngModel>
+
+                <br>
+                <p>OTP: </p><p>{{secretkey}}</p>
+                <input type="number" class="form-control" placeholder="4-digit OTP" name="otppin">
+                <br>
+                <button type="submit"   class="btn btn-primary">Signup</button>
+            </div>
+            </form>
+        </div>
+        <div class="col-sm-5 img">
+            <!-- <h3>Go Dark!!!</h3> -->
+            <img src="https://static.vecteezy.com/system/resources/previews/002/084/011/non_2x/cute-earth-mascot-character-save-earth-cartoon-icon-illustration-free-vector.jpg" width="500px" alt="img">
+        </div>
+    </div>
+</body>
+</html>
+
+
+

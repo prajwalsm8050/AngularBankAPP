@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Emi and Loan</title>
+</head>
+<body>
+	<div class="sicalcy">
+		<div class="row">
+			<div class="col-5 calcy">
+			<div class="form-group form">
+				<h1>Easy Emi Calculate</h1>
+				<label for="principal" class="principal">
+					<span>
+						<i class="fa fa-usd" aria-hidden="true"></i>
+					</span>
+					<input id="principal" type="number" placeholder="Loan Amount" #principal/>
+				</label><br>
+				<label for="rate" class="rate">
+					<span class="percent">
+						%
+					</span>
+					<input id="rate" type="number" placeholder="Rate of Intrest" #rate/>
+				</label><br>
+				<label for="Time" class="time">
+					<span>
+						<i class="fa fa-clock-o" aria-hidden="true">
+						</i>
+					</span>
+					<input id="time" type="number" placeholder="Years to Repay" #time/>
+				</label><br>
+				<button class="btn btn-outline-primary" type="submit" (click)=" Calculate(principal.valueAsNumber,rate.valueAsNumber,time.valueAsNumber)">Calculate</button>
+		    </div>
+			</div>
+			<div class="col-5 emi">
+				<div class="">
+					<div class="totalintrest">
+							<span>Interest :</span> 
+						<span id="payement">{{ totalIntrest}}</span>
+					</div>
+				</div>
+				<div class="results hide">
+					<div class="payement">
+							<span>Monthly Payement:</span>
+						<span id="payement">{{ payment}}</span>
+					</div>
+				</div>
+				<div class="results hide">
+					<div class="totalpay">
+							<span>Total Payement:</span> 
+						<span id="payement">{{ totalPay}}</span>
+					</div>
+				   </div>
+	             </div>
+		       </div>
+		 </div>
+	</body>
+</html>

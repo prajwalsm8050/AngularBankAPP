@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.header{
+    /* height: 10vh; */
+}
+
+.navbar-style{
+    box-shadow: 0 5px 10px #efefef;
+
+}
+
+.logo{
+    height: 50px;
+    padding: 2px 10px;
+}
+
+.btn{
+    margin: 2px;
+}
+
+
+li,a{
+    display: inline-flex;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+}
+
+a{
+    margin: 0.5rem;
+    
+}
+
+a:hover{
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 12px #f5efef;
+}
+
+.title{
+    font-family: 'Balsamiq Sans', cursive;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fugaz One', cursive;
+    max-width: 500px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-top: 100px;
+    color:brown;
+    padding-left: 85px;
+    
+}
+
+.first{
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://www.teahub.io/photos/full/223-2236998_arizona-4k.jpg");
+    background-attachment: fixed;
+    
+
+}
+
+.press-img{
+    width: 250px;
+    margin: 30px;
+}
+#press{
+    /* margin: 50px;    */
+    padding: 120px; 
+    background-attachment: fixed;
+
+}
+
+.testimonial{
+    /* background-color: whitesmoke;
+    background-size: cover;
+    background-attachment: fixed; */
+    
+}
+
+.story-title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.article{
+  background-color: cadetblue;
+  background-attachment: fixed;
+}
+
+ #p1{
+    display: inline-flex;
+    margin: 60px;
+      font-family: 'Fira Sans', sans-serif;
+  
+}
+
+#press-story{
+    box-shadow: 0 10px 10px #efefef;
+    padding-left:  150px;
+    color: white;
+    font-weight: 800;
+    transform:rotate3d(5);
+     background-attachment: fixed;
+}
+
+.footer{
+    height: 50vh;
+
+    
+}
+
+.footer-logo{
+    width: 50%;
+    margin: 20px;
+}
+

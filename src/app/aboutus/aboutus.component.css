@@ -1,0 +1,22 @@
+.aboutus{
+    margin: 50px;
+    border-bottom: 3px dashed black;
+}
+h1,p{
+    font-family: 'Prompt', sans-serif;
+    padding-top: 10px;
+    
+}
+
+p::first-letter{
+    float: left;
+    font-size: 45px;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+body{
+    background-color: antiquewhite;
+    margin: 100px;
+    height: 50vh;
+}

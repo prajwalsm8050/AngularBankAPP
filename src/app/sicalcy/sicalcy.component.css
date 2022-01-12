@@ -1,0 +1,44 @@
+
+body{
+    background-color: aqua;
+    height: 100vh;
+}
+
+
+.form
+{
+    margin: 50px;
+    justify-content: center;
+    max-width: 500px;
+    justify-content:center;
+    display:block;
+    background-color:
+
+}
+.emi
+{
+    padding: 50px;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label
+{
+    justify-content:center;
+    padding: 5px;
+}
+
+.row{
+    padding: 100px;
+}
+
+span{
+    background-color: teal;
+     border: 1px solid black;
+}
+
+i{
+    margin: 9px;
+   
+    
+}
