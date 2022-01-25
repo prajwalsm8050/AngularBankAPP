@@ -17,6 +17,11 @@ p::first-letter{
 }
 body{
     background-color: antiquewhite;
-    margin: 100px;
+    margin: 50px;
     height: 50vh;
+}
+
+img{
+    display: inline;
+    padding: 10px;
 }

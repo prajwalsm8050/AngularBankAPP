@@ -1,6 +1,8 @@
 export class Users{
-    firstName:string = '';
-    lastName:string = '';
+    firstname:string = '';
+    lastname:string = '';
     email:string = '';
-    password:string = '';
+    adhar:number = 12;
+    dob:String = "";
+
 }

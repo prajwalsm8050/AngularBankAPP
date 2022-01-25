@@ -8,7 +8,9 @@ import { OtpService } from './otp.service';
 })
 export class AppComponent implements OnInit {
 
+
   title = 'bank';
+
 
   constructor(private otp:OtpService) { }
 
@@ -20,7 +22,10 @@ export class AppComponent implements OnInit {
       })
   }
 
-
+  
+ handlelogout(){
+   console.log("Logout hits")
+ }
 
 
 }

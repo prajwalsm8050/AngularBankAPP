@@ -8,19 +8,28 @@ import { Users } from './Users';
 })
 export class UserService {
   
-  private _URL: string = "http://localhost:3303";
+  private baseURL: string = "http://localhost:3303";
 
   constructor(private http: HttpClient) { }
 
-  saveUser(usrs: Users) : Observable<Users> {
-    return this.http.post<Users>(`${this._URL}/bankapi/register`,usrs)
+  // saveUser(usrs: Users) : Observable<Users> {
+  //   return this.http.post<Users>(`${this._URL}/bankapi/register`,usrs)
+  // }
+
+  // loginuser(usrs: Users) : Observable<Users> {
+  //   this.http.get<Users>(`${this._URL}/bankapi/login`)
+  //   return  this.http.post<Users>(`${this._URL}/bankapi/login`, usrs)
+  // }
+
+
+  saveUser(users: Users) {
+    return this.http.post<Users>(`${this.baseURL}/bank/api/save`, users)
   }
 
 
-  loginuser(usrs: Users) : Observable<Users> {
-    this.http.get<Users>(`${this._URL}/bankapi/login`)
-    return  this.http.post<Users>(`${this._URL}/bankapi/login`, usrs)
+  getUser(email: string): Observable<Users> {
+    return this.http.get<Users>(`${this.baseURL}/bank/api/getUser/:${email}`);
   }
 
-
+  
 }

@@ -15,6 +15,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FirebaseService } from './services/firebase.service';
+import { ProfileComponent } from './profile/profile.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 
@@ -26,7 +29,10 @@ import { FirebaseService } from './services/firebase.service';
     RegisterComponent,
     AboutusComponent,
     LoanComponent,
-    SicalcyComponent
+    SicalcyComponent,
+    ProfileComponent,
+    UserprofileComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

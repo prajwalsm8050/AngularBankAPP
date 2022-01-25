@@ -1,18 +1,21 @@
 <div class="row">
         <div class="col-sm-6">
-            <form #user = "ngForm" (submit)="loginuser(user.value)">
+            <form #user  (submit)="loginuser(email.value , password.value)">
             <div class="form-group" id="loginForm" >
                 <h1>Login</h1>
-                <label for="username"><b>username</b></label>
-                <input type="text" class="form-control" placeholder="username" name="username" required ngModel>
+                <span><p>{{errorCode}}</p></span>
+                <span><p>{{errorMessage}}</p></span>
+                <label for="username"><b>Email</b></label>
+                <input type="email" class="form-control" placeholder="username" name="username" required #email>
     
                 <label for="psw"><b>Password</b></label>
-                <input type="password" class="form-control" placeholder="password" name="password" required ngModel>
+                <input type="password" class="form-control" placeholder="password" name="password" required #password>
                 <br>
                 <!-- <p>OTP</p>
                 <input type="number" class="form-control" placeholder="" name="otp"> -->
                 <br>
                 <button type="submit" class="btn btn-primary">Login</button>
+
             </div>
             </form>
         </div>

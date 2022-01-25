@@ -32,8 +32,6 @@ export class SicalcyComponent implements OnInit {
 
   constructor() { }
 
-
-
   ngOnInit(): void {
   }
 

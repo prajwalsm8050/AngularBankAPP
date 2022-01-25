@@ -27,17 +27,28 @@
     <li><a [routerLink]="['aboutus']">About Us</a></li>
             </ul>
         </div>
-        <div class="btn-login">
+        <div *ngIf = "isSignedIn; else authbuttons">
+          <p><a [routerLink] = "['profile']"> <i class='bx bxs-face-mask bx-lg'></i></a></p>
+          
+          <button class="btn btn-outline-primary" type="button" [routerLink] = "['register']"><i class="fa fa-fw fa-user-plus"></i>Signout</button>
+          </div>
+        <ng-template #authbuttons>
+            <div class="btn-login">
             <button class="btn btn-outline-success" type="button" [routerLink] = "['login']" ><i class="fa fa-fw fa-user"></i>Login</button>
             <button class="btn btn-outline-primary" type="button" [routerLink] = "['register']"><i class="fa fa-fw fa-user-plus"></i>Signup</button>
         </div>
+        </ng-template>
+        <!-- <div class="btn-login">
+            <button class="btn btn-outline-success" type="button" [routerLink] = "['login']" ><i class="fa fa-fw fa-user"></i>Login</button>
+            <button class="btn btn-outline-primary" type="button" [routerLink] = "['register']"><i class="fa fa-fw fa-user-plus"></i>Signup</button>
+        </div> -->
         </nav>
     </header>
       <div class="col-sm-12 first">
                <div class="col-sm-8 title">
             <section id="title">
                     <div class="container">
-                        <h1>National Bank Of Arizona</h1>
+                        <h1>National Bank Of Arizona </h1>
                         <p><i>Growing stronger together...</i></p>
                     </div>
             </section>

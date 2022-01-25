@@ -1,0 +1,33 @@
+    <!-- <div class="row">
+        <div class="col-12">
+    <header class="header">
+        <nav class="navbar  navbar-style">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href=""><img class="logo" src="./assets/img/logo.png" alt="logo"></a>
+                </div>
+            <ul class="nav">
+            <li><a class="active" href="#"><i class='bx bx-home' > Home</i></a></li>
+            <li><a [routerLink] = ""><i class='bx bxs-user-account'> Account</i></a></li>
+            <li><a ><i class='bx bx-money-withdraw' [routerLink]="['loan']"> Loan</i></a></li>
+            <li><a href="">Investments Products</a></li>
+    <li><a [routerLink]="['aboutus']">About Us</a></li>
+            </ul>
+        </div>
+        <div *ngIf = "isSignedIn; else authbuttons">
+          <p><a [routerLink] = "['profile']"> <i class='bx bxs-face-mask bx-lg'></i></a></p>
+          
+          <button class="btn btn-outline-primary" type="button" [routerLink] = "['register']"><i class="fa fa-fw fa-user-plus"></i>Signout</button>
+          </div>
+        <ng-template #authbuttons>
+            <div class="btn-login">
+            <button class="btn btn-outline-success" type="button" [routerLink] = "['login']" ><i class="fa fa-fw fa-user"></i>Login</button>
+            <button class="btn btn-outline-primary" type="button" [routerLink] = "['register']"><i class="fa fa-fw fa-user-plus"></i>Signup</button>
+        </div>
+        </ng-template>
+        <!-- <div class="btn-login">
+            <button class="btn btn-outline-success" type="button" [routerLink] = "['login']" ><i class="fa fa-fw fa-user"></i>Login</button>
+            <button class="btn btn-outline-primary" type="button" [routerLink] = "['register']"><i class="fa fa-fw fa-user-plus"></i>Signup</button>
+        </div> -->
+        <!-- </nav>
+    </header> --> -->
