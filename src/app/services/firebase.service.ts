@@ -26,9 +26,6 @@ export class FirebaseService {
     .catch((error) => {
      this.errorCode = error.code;
     this.errorMessage = error.message;
-    console.log(this.errorCode)
-    console.log(this.errorMessage)
-    alert("Wrong Credenetials")
     this.dataservice.ErrorHandle(this.errorCode, this.errorMessage)
     })
   }

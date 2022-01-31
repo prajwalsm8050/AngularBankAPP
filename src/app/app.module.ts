@@ -18,6 +18,8 @@ import { FirebaseService } from './services/firebase.service';
 import { ProfileComponent } from './profile/profile.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
+import { UserBankComponent } from './user-bank/user-bank.component';
 
 
 
@@ -32,7 +34,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     SicalcyComponent,
     ProfileComponent,
     UserprofileComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdminPanelComponent,
+    UserBankComponent
   ],
   imports: [
     BrowserModule,

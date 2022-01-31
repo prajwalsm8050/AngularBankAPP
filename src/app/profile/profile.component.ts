@@ -16,8 +16,7 @@ export class ProfileComponent implements OnInit , DoCheck{
   users: Users = new Users();
 
   ngDoCheck(): void {
-    // this.email = this.dataservice.email
-    // console.log(this.email)
+    
     
   }
 
@@ -35,7 +34,7 @@ export class ProfileComponent implements OnInit , DoCheck{
   branch:string="bangalore"
 
   disabled = false
-  email:string = "virat@gmail.com"
+  email:string = ""
   edit = ()=> this.disabled = true
   
 
@@ -53,6 +52,7 @@ export class ProfileComponent implements OnInit , DoCheck{
     // this.dob = obj.dob
 
     if(this.users != null){
+     
       console.log("OK OK OK")
       console.log(this.users)
       this.userservice.saveUser(this.users).subscribe((data) => {
@@ -60,14 +60,16 @@ export class ProfileComponent implements OnInit , DoCheck{
       })
     }
   }
+  
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
+    this.email = this.dataservice.email
+    console.log(this.email)
     this.userservice.getUser(this.email).subscribe((data) => {
       
-
     })
 
   }
-
 
 }

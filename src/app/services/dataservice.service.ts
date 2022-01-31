@@ -21,7 +21,7 @@ export class DataserviceService {
   
   ErrorHandle(ErrorCode:string , ErrorMessage:string ){
     this.ErrorCode = ErrorCode
-    this.ErrorMessage = "Email address is badly formatted"
+    this.ErrorMessage = ErrorMessage
   }
 
 }

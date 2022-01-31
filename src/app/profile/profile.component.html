@@ -8,12 +8,9 @@
 </head>
 <body>
 <div class="container">
+    <app-navbar></app-navbar>
     <div class="main">
         <div class="topbar">
-            <a href = "">Logout</a>
-            <a href = "">Support</a>
-            <a href="">Transfer Funds</a>
-            <a href = " ">Home</a>
         </div>
         <div class="row">
             <div class="card text-center sidebar">
@@ -38,24 +35,19 @@
                                         <div class="form-group" style="display: flex">
                                             <label for="firstName">FirstName</label>
                                             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="{{firstname}}" value="{{firstname}}" [disabled]="!disabled" ngModel>
-
                                             <label for = "lastname">LastName</label>
                                             <input type="text" class="form-control" id="lastname" name="lastname" placeholder="{{lastname}}" value="{{lastname}}" [disabled]="!disabled" ngModel >
                                   </div>
-
                                   <div>
                                       <label for = "Email">Email</label>
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="test@gmail.com" value="{{email}}" [disabled]="!disabled" ngModel>
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="{{email}}" value="{{email}}" [disabled]="!disabled" ngModel>
                                   </div>
-
                                   <div class="form-group" style="display: flex">
                                              <label for="adhar">Adhar Number</label>
                                             <input type="number" class="form-control" id="adhar" name="adhar" placeholder="{{adhar}}" value="{{adhar}}" [disabled]="!disabled" ngModel>
-                                            
                                             <label for="adhar">DOB</label>
                                             <input type="date" class="form-control" id="dob" name="dob" placeholder="{{dob}}" value="{{dob}}" [disabled]="!disabled" ngModel>
                                   </div>
-
                                             <input type="reset" (click)="edit()" value="Edit Details">
                                             <div *ngIf="disabled">
                                                 <input type="submit"   value="Save Changes">
@@ -66,14 +58,12 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="card">
                     <h1 class="m-3 pt-3">Account Details </h1>
                     <h5>Account no : {{accountno}}</h5>
                     <h5>Type : {{type}}</h5>
                     <h5>Bank branch: {{branch}}</h5>
                 </div>
-
             </div>
         </div>
     </div>

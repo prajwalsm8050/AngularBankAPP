@@ -10,6 +10,7 @@ export class UserService {
   
   private baseURL: string = "http://localhost:3303";
 
+
   constructor(private http: HttpClient) { }
 
   // saveUser(usrs: Users) : Observable<Users> {
@@ -23,13 +24,15 @@ export class UserService {
 
 
   saveUser(users: Users) {
-    return this.http.post<Users>(`${this.baseURL}/bank/api/save`, users)
+    return this.http.post<Users>(`${this.baseURL}/bank/api/saveUser`, users)
   }
 
 
   getUser(email: string): Observable<Users> {
     return this.http.get<Users>(`${this.baseURL}/bank/api/getUser/:${email}`);
   }
+
+
 
   
 }
